@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Train Time</h1>
+      <p>Choo Choo</p>
+    </div>
+    <div>
+      <table class="table" id="trainTimeList">
+        <thead>
+          <tr>
+            <th id="trainName">Train Name</th>
+            <th id="destination">Destination</th>
+            <th id="frequency">Frequency(min)</th>
+            <th id="nextArrival">Next Arrival</th>
+            <th id="minutesAway">Minutes Away</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+    </div>
+    <h1>Add Train</h1>
+
+    <form>
+      <p>
+        <label for="name">Train Name</label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>
+        <label for="Destination">Destination</label>
+        <input type="text" name="Destination" id="Destination" />
+      </p>
+      <p>
+        <label for="firstTrainTime">First Train Time</label>
+        <input type="number" name="First Train Time" id="First Train Time" />
+      </p>
+      <p>
+        <label for="frequency">frequency</label>
+        <input type="number" name="frequency" id="frequency" />
+      </p>
+      <button id="sbmt">Submit</button>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  </body>
 </html>
